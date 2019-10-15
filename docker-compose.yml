@@ -5,7 +5,7 @@ services:
     container_name: user_daemon
     volumes:
     - ./:/src
+    command: add-apt-repository ppa:ethereum/ethereum
+    command: apt-get update
+    command: apt-get install solc
     command: sleep infinity
-    command: sudo add-apt-repository ppa:ethereum/ethereum
-    command: sudo apt-get update
-    command: sudo apt-get install solc
