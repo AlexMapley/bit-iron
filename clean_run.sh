@@ -4,6 +4,7 @@
 # it will begin a new bash user session via 
 # the user_daemon container.
 cd docker
+bash destroy_docker.sh
 docker-compose up -d
 containerID=$(docker ps | grep ubuntu | awk '{print $1}')
 
