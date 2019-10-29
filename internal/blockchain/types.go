@@ -1,10 +1,12 @@
 package blockchain
 
 type BitIron struct {
-	genesis string
-	block   Block
+	Genesis string
+	Block   Block
 }
 
+// A Block represents a single transaction
+// that may or may not have generated new BitIron
 type Block struct {
-	id int64
+	ID int64
 }
