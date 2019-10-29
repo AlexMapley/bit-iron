@@ -8,5 +8,6 @@ type BitIron struct {
 // A Block represents a single transaction
 // that may or may not have generated new BitIron
 type Block struct {
-	ID int64
+	ID          int64
+	Transaction Transaction
 }
